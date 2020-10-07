@@ -390,6 +390,7 @@ class RunProcessing(object):
                     continue
         else:
             log.info("Logs folder doesn't exist, maybe something with with analyzer folder, any change?")
+            log.info("Failed to find path: " + self.analysis_path, "logs")
 
         family = ""
         self.results["malfamily_tag"] = ""
